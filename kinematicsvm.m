@@ -1,9 +1,18 @@
+
+function [accTest, accCv] = kinematicsvm(Data,filename)
+%% fully integrated SVM classification 
 % a function to automatically select the kinematics data, predict the
 % accuracy of the classification, select the best features/ provide best
 % features using F-score
-function [accTest, accCv] = kinematicsvm(Data,filename)
+
+% ----------------------------
+% Author : Atesh Koul
+% Italian Institute of technology, Genoa
+% ----------------------------
 
 
+
+%%
 % Get the current folder will be used to save the files filename.fscore,
 % filename.select
 current_loc = pwd;
