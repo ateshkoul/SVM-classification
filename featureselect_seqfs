@@ -1,0 +1,8 @@
+
+
+
+
+
+svfun = @(xtrain,ytrain,xtest,ytest)sum(svmpredict(ytest,xtest,svmtrain(ytrain,xtrain,'-q')) ~=ytest);
+
+[fs hisory] = sequentialfs(@svfun,x,y)
